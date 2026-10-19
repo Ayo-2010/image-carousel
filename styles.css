@@ -1,17 +1,22 @@
 :root {
-  --bg: #0b0b10;
-  --panel: #14141c;
+  --bg: #14100c;
+  --panel: #1e1813;
   --border: rgba(255, 255, 255, 0.1);
-  --text: #f6f5fa;
+  --text: #f7f2ee;
   --muted: #9b9aad;
   --radius: 22px;
 }
+
+[hidden] {
+  display: none !important;
+}
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: radial-gradient(900px 500px at 50% -10%, rgba(120, 100, 255, 0.16), transparent 60%), var(--bg);
+  background: var(--bg);
   color: var(--text);
   min-height: 100vh;
   display: grid;
@@ -30,7 +35,7 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border);
-  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.40);
   background: var(--panel);
 }
 
@@ -106,7 +111,7 @@ body {
 }
 
 .progress { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255, 255, 255, 0.12); z-index: 3; }
-.progress-fill { height: 100%; width: 0; background: linear-gradient(90deg, #8b7bff, #ff6bcb); }
+.progress-fill { height: 100%; width: 0; background: linear-gradient(90deg, #fb923c, #f43f5e); }
 
 .controls { display: flex; align-items: center; gap: 12px; margin-top: 18px; flex-wrap: wrap; }
 
@@ -122,8 +127,8 @@ body {
   cursor: pointer;
   transition: transform 0.15s, border-color 0.2s;
 }
-.ctrl:hover { transform: translateY(-2px); border-color: #8b7bff; }
-.ctrl.on { background: linear-gradient(135deg, #8b7bff, #ff6bcb); border-color: transparent; color: #fff; }
+.ctrl:hover { transform: translateY(-2px); border-color: #fb923c; }
+.ctrl.on { background: linear-gradient(135deg, #fb923c, #f43f5e); border-color: transparent; color: #fff; }
 
 .hint { margin-left: auto; color: var(--muted); font-size: 0.78rem; }
 
@@ -138,7 +143,7 @@ body {
   transition: all 0.25s;
 }
 .dot:hover { background: var(--muted); }
-.dot.active { width: 30px; border-radius: 999px; background: linear-gradient(90deg, #8b7bff, #ff6bcb); }
+.dot.active { width: 30px; border-radius: 999px; background: linear-gradient(90deg, #fb923c, #f43f5e); }
 
 .thumbs { display: flex; gap: 12px; margin-top: 22px; overflow-x: auto; padding-bottom: 6px; }
 
@@ -156,7 +161,7 @@ body {
   transition: opacity 0.25s, border-color 0.25s, transform 0.25s;
 }
 .thumb:hover { opacity: 0.85; transform: translateY(-2px); }
-.thumb.active { opacity: 1; border-color: #8b7bff; }
+.thumb.active { opacity: 1; border-color: #fb923c; }
 
 .thumbs::-webkit-scrollbar { height: 6px; }
 .thumbs::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }

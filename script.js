@@ -5,6 +5,7 @@ const SLIDES = [
   { title: 'Sahara, Morocco', text: 'Golden dunes under an endless sky.', emoji: '🐪', colors: ['#f7971e', '#ffd200'] },
   { title: 'Reykjavik, Iceland', text: 'Northern lights over volcanic plains.', emoji: '🌌', colors: ['#3a1c71', '#00c9ff'] },
   { title: 'Bali, Indonesia', text: 'Rice terraces and warm tropical rain.', emoji: '🌴', colors: ['#f857a6', '#ff5858'] },
+  { title: 'Lagos, Nigeria', text: 'Afrobeats, busy markets and Atlantic beaches.', emoji: '🥁', colors: ['#f59e0b', '#15803d'] },
 ];
 
 const AUTOPLAY_MS = 4200;

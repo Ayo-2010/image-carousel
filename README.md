@@ -8,6 +8,7 @@ A touch-friendly image slideshow.
 - Autoplay with a progress bar
 - Keyboard arrows and swipe gestures
 - Fullscreen mode
+- Seven destinations, including Lagos, Nigeria
 
 ## Running it
 

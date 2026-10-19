@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel — Image Gallery</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="gallery">
+  <header class="gallery-head">
+    <h1>Wanderlust</h1>
+    <p>A slideshow of places worth seeing.</p>
+  </header>
+
+  <div class="carousel" id="carousel">
+    <div class="viewport" id="viewport">
+      <div class="track" id="track"></div>
+    </div>
+
+    <button class="nav prev" id="prevBtn" aria-label="Previous slide">‹</button>
+    <button class="nav next" id="nextBtn" aria-label="Next slide">›</button>
+
+    <div class="caption" id="caption">
+      <h2 id="captionTitle">—</h2>
+      <p id="captionText">—</p>
+    </div>
+
+    <div class="counter" id="counter">1 / 6</div>
+
+    <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <div class="controls">
+    <button class="ctrl" id="playBtn">▶ Play</button>
+    <button class="ctrl" id="fullBtn">⛶ Fullscreen</button>
+    <span class="hint">Use ← → keys or swipe</span>
+  </div>
+
+  <div class="dots" id="dots"></div>
+
+  <div class="thumbs" id="thumbs"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
